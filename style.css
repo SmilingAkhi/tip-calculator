@@ -41,7 +41,7 @@
       background-color: white;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 40px;
       border-radius: 20px;
 
   }
@@ -62,7 +62,10 @@
   }
 
   .input-field-container {
-      font-family: 'space mono';
+    display: flex;  
+    font-family: 'space mono';
+      justify-content: center;
+      align-items: center;
       color: var(--Very-dark-cyan);
       width: 100%;
       border: none;
@@ -82,33 +85,58 @@
       background-color: var(--Very-light-grayish-cyan);
       border-radius: 2px;
       font-size: 24px;
-      direction: rtl;
+      text-align: right;
   }
 
   .input-field-container:hover {
+      cursor: pointer;
       border: 2px solid hsl(172, 67%, 45%);
       outline: none;
   }
-.tip-percentage{
-    padding: 10px;
-    background-color: var(--Very-dark-cyan);
-    color: white;
-    font-weight: 700;
-    text-align: center;
-    border-radius: 5px;
-    font-size:1.1rem
-}
-.tip-percentage:hover{
 
+  .btn {
+      outline: none;
+      border: none;
+      font-family: 'space mono';
+      padding: 10px;
+      background-color: var(--Very-dark-cyan);
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      letter-spacing: .1rem;
+  }
+
+  .btn:hover {
+      cursor: pointer;
+      background-color: hsl(172, 74%, 76%);;
+      color: var(--Very-dark-cyan);
+  }
+
+
+  .tip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
+
+  }
+
+  .custom {
+      text-align: right;
+      background-color: var(--Very-light-grayish-cyan);
+      color: var(--Very-dark-cyan);
+      direction: ltr;
+  }
+  .custom:hover{
+    background-color: var(--Very-light-grayish-cyan);
     cursor: pointer;
-    /* background-color: ; */
-}
-.tip-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
-    gap: 10px;
-    
-}
+    border: 2px solid hsl(172, 67%, 45%);
+    outline: none;
+  }
+  .custom::placeholder{
+    text-align: center;
+  }
 
   .right-side {
       color: white;
