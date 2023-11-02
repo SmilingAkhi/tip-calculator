@@ -15,7 +15,6 @@
 
     <title>Frontend Mentor | Tip calculator app</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -34,7 +33,7 @@
             <label for="bill">Bill</label>
             <div class="input-field-container">
               <img src="./images/icon-dollar.svg" alt="dollar" />
-              <input type="text" name="" class="bill input-field" />
+              <input type="text" name="bill" class="bill input-field" />
             </div>
           </div>
 
@@ -61,6 +60,23 @@
 
         <div class="right-side">
 
+          <div class="tip-amount-container">
+            <div class="tip-amount">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <div class="tip-display"></div>
+          </div>
+
+          <div class="total-amount-container">
+            <div class="total-amount">
+              Total
+              <p>/ person</p>
+            </div>
+            <div class="total-display"></div>
+          </div>
+
+          <button class="btn reset"> reset</button>
         </div>
       </div>
     </div>
