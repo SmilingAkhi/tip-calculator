@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+
 
     <link
       rel="icon"
@@ -27,70 +27,71 @@
   </head>
   <body>
 
-    <div class="container">
-      <h1>
-        TIP<br>
-        MASTER
-      </h1>
-      <div class="work-area">
-        <div class="left-side">
-          <div class="">
-            <label for="bill">Bill</label>
-            <div class="input-field-container">
-              <img src="./images/icon-dollar.svg" alt="dollar" />
-              <input type="text" name="bill" class="bill input-field" />
+      <div class="container">
+        <h1>
+          TIP<br />
+          MASTER
+        </h1>
+        <div class="work-area">
+          <div class="left-side">
+            <div class="">
+              <label for="bill">Bill</label>
+              <div class="input-field-container">
+                <img src="./images/icon-dollar.svg" alt="dollar" />
+                <input type="text" name="bill" class="bill input-field" />
+              </div>
+            </div>
+
+            <div class="">
+              <label for="tip-grid">Select Tip %</label>
+              <div class="tip-grid">
+                <button class="btn tip-percentage">5%</button>
+                <button class="btn tip-percentage">10%</button>
+                <button class="btn tip-percentage">15%</button>
+                <button class="btn tip-percentage">25%</button>
+                <button class="btn tip-percentage">50%</button>
+                <input type="text" class="btn custom" placeholder="Custom" />
+              </div>
+            </div>
+
+            <div class="">
+              <label for="people"> Number of People</label>
+              <div class="input-field-container">
+                <img src="./images/icon-person.svg" alt="person" />
+                <input type="text" name="people" class="people input-field" />
+              </div>
             </div>
           </div>
 
-          <div class="">
-            <label for="tip-grid">Select Tip %</label>
-            <div class="tip-grid">
-              <button class="btn tip-percentage">5%</button>
-              <button class="btn tip-percentage">10%</button>
-              <button class="btn tip-percentage">15%</button>
-              <button class="btn tip-percentage">25%</button>
-              <button class="btn tip-percentage">50%</button>
-              <input type="text" class="btn custom" placeholder="Custom" />
+          <div class="right-side">
+            <div class="tip-amount-container">
+              <div class="tip-amount">
+                <p class="right-side-amount">Tip Amount</p>
+                <p class="person">/ person</p>
+              </div>
+              <div class="display">$4.27</div>
             </div>
-          </div>
 
-          <div class="">
-            <label for="people"> Number of People</label>
-            <div class="input-field-container">
-              <img src="./images/icon-person.svg" alt="person" />
-              <input type="text" name="people" class="people input-field" />
+            <div class="total-amount-container">
+              <div class="total-amount">
+                <p class="right-side-amount">Total</p>
+                <p class="person">/ person</p>
+              </div>
+              <div class="display">$32.79</div>
             </div>
+
+            <button class="btn reset" disabled>RESET</button>
           </div>
         </div>
-
-        <div class="right-side">
-          <div class="tip-amount-container">
-            <div class="tip-amount">
-              <p class="right-side-amount">Tip Amount</p>
-              <p class="person">/ person</p>
-            </div>
-            <div class="display">$4.27</div>
-          </div>
-
-          <div class="total-amount-container">
-            <div class="total-amount">
-              <p class="right-side-amount">Total</p>
-              <p class="person">/ person</p>
-            </div>
-            <div class="display">$32.79</div>
-          </div>
-
-          <button class="btn reset" disabled>RESET</button>
-        </div>
       </div>
-    </div>
-    <footer>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </div>
-    </footer>
   </body>
+
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Koji</a>.
+    </div>
+  </footer>
 </html>

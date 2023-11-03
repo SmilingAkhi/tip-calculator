@@ -18,19 +18,19 @@
   }
 
   body {
+
       font-family: 'Space Mono';
       background-color: var(--Light-grayish-cyan);
-      display: flex;
-      flex-direction: column;
   }
-
+.wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
   .container {
-
-      height: 100vh;
       display: flex;
       flex-direction: column;
-      gap:7em;
-      /* justify-content: space-around; */
+      gap:3em;
       align-items: center;
   }
 h1{    
